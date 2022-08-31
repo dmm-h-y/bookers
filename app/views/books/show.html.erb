@@ -1,0 +1,17 @@
+<body>
+  <p id ="notice"></p>
+  <p>
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  <p>
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
+
+<!--showには削除要らない -->
+<%= link_to "Edit", edit_book_path(@book.id) %>
+|
+<%= link_to "Back", "/books" %>
+
+</body>
